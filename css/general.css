@@ -1,0 +1,99 @@
+/********** 
+----- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font Weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line Heights
+Default: 1
+Small: 
+Medium: 
+Paragraph default:
+Large:
+
+- Letter Spacing
+-0.5px
+0.75px
+
+----- 02 COLORS
+
+- Primary: 
+- Tints:
+
+
+- Shades: 
+
+
+- Accents:
+- Greys
+
+
+----- 05 SHADOWS
+
+
+----- 06 BORDER-RADIUS
+Default:
+Small: 
+Medium:
+Large:
+
+----- 07 WHITESPACE
+
+- Spacing System (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+**********/
+
+/* GOOGLE FONT IMPORT */
+
+/* CSS RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* UTILITY CLASSES */
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/********** GENERAL REUSABLE COMPONENTS *********/
+/* Here is where I style things that have common and repeatedly styling (Headings, buttons, layouts, links). */
