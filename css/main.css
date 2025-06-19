@@ -1,1 +1,102 @@
-/********** NAME SECTION *********/
+/********** HEADER SECTION *********/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* temporary bg color */
+  background-color: rgba(168, 203, 209, 0.6);
+  height: 7.4rem;
+  padding: 0 3.2rem;
+  position: relative;
+}
+
+.logo {
+  width: 8rem;
+}
+
+/********** NAVIGATION SECTION *********/
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.header__nav-link:link,
+.header__nav-link:visited {
+  display: inline-block;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.header__nav-link:hover,
+.header__nav-link:active {
+  color: #009cd7;
+}
+
+.header__nav-link--cta:link,
+.header__nav-link--cta:visited {
+  background-color: #00adef;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.9rem;
+  color: #fff;
+}
+
+.header__nav-link--cta:hover,
+.header__nav-link--cta:active {
+  background-color: #009cd7;
+}
+
+/* MOBILE */
+.header__menu-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  /* hide from large screen */
+  display: none;
+}
+
+.header__menu-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+/* hide the close icon menu, only to display in small device when menu is active */
+.header__menu-icon[name="close-outline"] {
+  /* hide close icon from large screen */
+  display: none;
+}
+
+/********** HERO SECTION *********/
+.hero {
+  /* temporary bg color */
+  background-color: rgba(168, 203, 209, 0.6);
+  padding: 4.8rem 0 9.6rem;
+}
+
+.hero__container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero__image-box {
+  width: 100%;
+}
+
+.hero__image {
+  border-radius: 50%;
+}
+
+.hero__description {
+  font-size: 2.2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}

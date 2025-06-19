@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 /********** 
 ----- 01 TYPOGRAPHY SYSTEM
 
@@ -27,11 +29,15 @@ Large:
 - Tints:
 
 
-- Shades: 
+- Shades:
+#009cd7
+#00adef
 
 
 - Accents:
+
 - Greys
+#333
 
 
 ----- 05 SHADOWS
@@ -73,7 +79,53 @@ textarea {
   font: inherit;
 }
 
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+
 /* UTILITY CLASSES */
+.heading__primary,
+.heading__secondary,
+.heading__tertiary {
+  font-weight: 700;
+  color: #333;
+}
+
+.heading__primary {
+  font-size: 4rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading__secondary {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading__tertiary {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+  text-transform: uppercase;
+}
+
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
@@ -93,6 +145,68 @@ textarea {
 
 .center-text {
   text-align: center;
+}
+
+.text-underline {
+  text-decoration: underline;
+  text-decoration-color: #555;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+}
+
+.btn--primary:link,
+.btn--primary:visited {
+  background-color: #00adef;
+  color: #fff;
+  position: relative;
+}
+
+.btn--primary:hover,
+.btn--primary:active {
+  background-color: #009cd7;
+}
+
+.btn--secondary:link,
+.btn--secondary:visited {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: transparent;
+  border: 2px solid #00adef;
+  color: #00adef;
+}
+
+.btn--small:link,
+.btn--small:visited {
+  padding: 0.4rem 1rem;
+  font-size: 0.875rem;
+}
+
+.btn--large:link,
+.btn--large:visited {
+  padding: 1.6rem 3.2rem;
+  font-size: 1.8rem;
+}
+
+.btn--block:link,
+.btn--block:visited {
+  display: block;
+  width: 100%;
 }
 
 /********** GENERAL REUSABLE COMPONENTS *********/
