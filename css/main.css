@@ -77,16 +77,6 @@
   padding: 4.8rem 0 9.6rem;
 }
 
-.hero__container {
-  max-width: 130rem;
-  margin: 0 auto;
-  padding: 0 3.2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
-  align-items: center;
-}
-
 .hero__image-box {
   width: 100%;
 }
@@ -99,4 +89,45 @@
   font-size: 2.2rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
+}
+
+.hero__text-box .profile__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.profile__btn-icon {
+  font-size: 2.4rem;
+}
+
+/********** ABOUT SECTION *********/
+.about {
+  padding: 9.6rem 0;
+}
+
+.about__description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/* SLIDER */
+.slider {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.slider__card-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.slider__card-wrapper .swiper-pagination-bullet {
+  height: 1.2rem;
+  width: 1.2rem;
+  opacity: 0.7;
+  /* TEMP BG-COLOR */
+  background-color: red;
+}
+.slider__card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
 }
