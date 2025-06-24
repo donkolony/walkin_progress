@@ -40,13 +40,35 @@
 .header__nav-link--cta:visited {
   background-color: #00adef;
   padding: 1.2rem 2.4rem;
-  border-radius: 0.9rem;
+  /* border-radius: 0.9rem; */
   color: #fff;
 }
 
 .header__nav-link--cta:hover,
 .header__nav-link--cta:active {
   background-color: #009cd7;
+}
+
+.header__nav-link--active:link,
+.header__nav-link--active:visited {
+  position: relative;
+}
+
+.header__nav-link--active:link::before,
+.header__nav-link--active:visited::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.6rem;
+  height: 0.2rem;
+  width: 100%;
+  background-color: #009cd7;
+  transition: all 0.4s;
+}
+
+.header__nav-link--active:hover::before,
+.header__nav-link--active:active::before {
+  width: 0%;
 }
 
 /* MOBILE */
@@ -75,6 +97,23 @@
   /* temporary bg color */
   background-color: rgba(168, 203, 209, 0.6);
   padding: 4.8rem 0 9.6rem;
+}
+
+.hero__container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.text-underline {
+  text-decoration: underline #009cd7;
+  text-decoration-thickness: 0.6rem;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 0.4rem;
 }
 
 .hero__image-box {
@@ -117,17 +156,39 @@
   max-width: 100%;
   overflow: hidden;
 }
+
 .slider__card-wrapper {
   width: 100%;
   overflow: hidden;
 }
+
 .slider__card-wrapper .swiper-pagination-bullet {
   height: 1.2rem;
   width: 1.2rem;
   opacity: 0.7;
   /* TEMP BG-COLOR */
-  background-color: red;
+  background-color: #009cd7;
 }
+
 .slider__card-wrapper .swiper-pagination-bullet-active {
   opacity: 1;
+}
+
+/********** SERVICES SECTION *********/
+.services {
+  background-color: #f8f9fa;
+  padding-top: 4.4rem;
+}
+
+.services__card {
+  /* TEMP BG-COLOR */
+  background-color: lightgreen;
+  padding: 1.6rem;
+}
+
+.services__icon {
+}
+.services__title {
+}
+.services__description {
 }

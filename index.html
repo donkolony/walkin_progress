@@ -29,7 +29,11 @@
       /></a>
       <nav class="header__nav">
         <ul class="header__nav-list">
-          <li><a href="#" class="header__nav-link">Section 1</a></li>
+          <li>
+            <a href="#" class="header__nav-link header__nav-link--active"
+              >Section 1</a
+            >
+          </li>
           <li><a href="#" class="header__nav-link">Section 2</a></li>
           <li><a href="#" class="header__nav-link">Section 3</a></li>
           <li><a href="#" class="header__nav-link">Section 4</a></li>
@@ -49,10 +53,11 @@
 
     <!-- HERO SECTION -->
     <section class="hero">
-      <div class="container">
+      <div class="hero__container">
         <div class="hero__text-box">
           <h1 class="heading__primary">
-            Building the Foundation for a Successful Tomorrow
+            Building the Foundation for a Successful
+            <span>Tomorrow</span>
           </h1>
           <p class="hero__description">
             Partner with us in empowering young minds with the knowledge and
@@ -86,7 +91,7 @@
           your <span class="text-underline">help!</span>
         </h2>
       </div>
-      <div class="container">
+      <div class="container grid grid--2-cols grid--center-v column--gap">
         <p class="about__description">
           At Walkin Progress, we empower young minds with the knowledge and
           skills to shape their futures. From financial literacy and career
@@ -156,6 +161,63 @@
           How we helping <br />
           <span class="text-underline">communities</span>
         </h2>
+      </div>
+
+      <div class="container grid grid--4-cols">
+        <!-- Service 1 -->
+        <div class="services__card">
+          <span
+            ><ion-icon name="cash-outline" class="services__icon"></ion-icon
+          ></span>
+          <h3 class="services__title">Financial Literacy</h3>
+          <p class="services__description">
+            Covers key financial topics monthly, helping individuals build money
+            management skills and make informed decisions
+          </p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="services__card">
+          <span
+            ><ion-icon
+              name="extension-puzzle-outline"
+              class="services__icon"
+            ></ion-icon
+          ></span>
+          <h3 class="services__title">Subject choice and Career Guidelines</h3>
+          <p class="services__description">
+            Explores different industries on a monthly basis, featuring guest
+            speakers who share their personal journeys and insights into
+            achieving success
+          </p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="services__card">
+          <span
+            ><ion-icon name="people-outline" class="services__icon"></ion-icon
+          ></span>
+          <h3 class="services__title">Mentoring</h3>
+          <p class="services__description">
+            Students are paired with dedicated mentors in their desired study or
+            career field. They also participate in monthly sessions covering a
+            wide range of topics, including university applications, CV
+            drafting, and essential life skills.
+          </p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="services__card">
+          <span
+            ><ion-icon name="radio-outline" class="services__icon"></ion-icon
+          ></span>
+          <h3 class="services__title">Networking</h3>
+          <p class="services__description">
+            Individuals will be taught how to network with industry
+            professionals through LinkedIn and will receive support in securing
+            job shadowing, internships or employment opportunities.
+          </p>
+        </div>
       </div>
     </section>
 
