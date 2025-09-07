@@ -34,7 +34,9 @@
               >Section 1</a
             >
           </li>
-          <li><a href="#" class="header__nav-link">Section 2</a></li>
+          <li>
+            <a href="#" class="header__nav-link">Section 2</a>
+          </li>
           <li><a href="#" class="header__nav-link">Section 3</a></li>
           <li><a href="#" class="header__nav-link">Section 4</a></li>
           <li>
@@ -71,7 +73,22 @@
               class="profile__btn-icon"
             ></ion-icon>
           </a>
+
+          <div class="student-assisted">
+            <div class="student-imgs">
+              <img src="./img/students/student-1.jpg" alt="student photo" />
+              <img src="./img/students/student-2.jpg" alt="student photo" />
+              <img src="./img/students/student-3.jpg" alt="student photo" />
+              <img src="./img/students/student-4.jpg" alt="student photo" />
+              <img src="./img/students/student-5.jpg" alt="student photo" />
+              <img src="./img/students/student-6.jpg" alt="student photo" />
+            </div>
+            <p class="student-text">
+              <span>100+</span> students assisted last year!
+            </p>
+          </div>
         </div>
+
         <div class="hero__image-box">
           <img
             src="./img/hero-img.png"
@@ -100,55 +117,55 @@
           building brighter futures and fostering a generation of financially
           savvy, career-ready leaders.
         </p>
-        <div class="slider swiper">
-          <div class="slider__card-wrapper">
-            <ul class="card-list swiper-wrapper">
-              <!-- Image Slider 1 -->
-              <li class="slider__card-item swiper-slide">
-                <img
-                  src="./img/gallery/slider4.jpg"
-                  alt="Student image slider__card-image"
-                />
-              </li>
+        <div class="swiper about-swiper">
+          <div class="swiper-wrapper">
+            <!-- Image Slider 1 -->
+            <div class="swiper-slide">
+              <img
+                src="./img/gallery/slider4.jpg"
+                alt="Student image slider__card-image"
+              />
+            </div>
 
-              <!-- Image Slider 2 -->
-              <li class="slider__card-item swiper-slide">
-                <img
-                  src="./img/gallery/slider3.jpg"
-                  alt="Student image slider__card-image"
-                />
-              </li>
+            <!-- Image Slider 2 -->
+            <div class="swiper-slide">
+              <img
+                src="./img/gallery/slider3.jpg"
+                alt="Student image slider__card-image"
+              />
+            </div>
 
-              <!-- Image Slider 3 -->
-              <li class="slider__card-item swiper-slide">
-                <img
-                  src="./img/gallery/slider8.jpg"
-                  alt="Student image slider__card-image"
-                />
-              </li>
+            <!-- Image Slider 3 -->
+            <div class="swiper-slide">
+              <img
+                src="./img/gallery/slider8.jpg"
+                alt="Student image slider__card-image"
+              />
+            </div>
 
-              <!-- Image Slider 4 -->
-              <li class="slider__card-item swiper-slide">
-                <img
-                  src="./img/gallery/slider9.jpg"
-                  alt="Student image slider__card-image"
-                />
-              </li>
+            <!-- Image Slider 4 -->
+            <div class="swiper-slide">
+              <img
+                src="./img/gallery/slider9.jpg"
+                alt="Student image slider__card-image"
+              />
+            </div>
 
-              <!-- Image Slider 5 -->
-              <li class="slider__card-item swiper-slide">
-                <img
-                  src="./img/gallery/slider10.jpg"
-                  alt="Student image slider__card-image"
-                />
-              </li>
-            </ul>
-            <!-- SwiperJS pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- SwiperJS navigation buttons -->
-            <div class="swiper-slide-button swiper-button-prev"></div>
-            <div class="swiper-slide-button swiper-button-next"></div>
+            <!-- Image Slider 5 -->
+            <div class="swiper-slide">
+              <img
+                src="./img/gallery/slider10.jpg"
+                alt="Student image slider__card-image"
+              />
+            </div>
           </div>
+
+          <!-- SwiperJS pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- SwiperJS navigation buttons -->
+          <!-- <div class="swiper-slide-button swiper-button-prev"></div> -->
+          <!-- <div class="swiper-slide-button swiper-button-next"></div> -->
         </div>
       </div>
     </section>
@@ -164,65 +181,61 @@
       </div>
 
       <div class="container grid grid--4-cols">
-        <!-- Service 1 -->
-        <div class="services__card">
-          <span
-            ><ion-icon name="cash-outline" class="services__icon"></ion-icon
+        <!-- Service 1: Mentoring -->
+        <div class="services__card services__card--highlight">
+          <span class="services__icon-box services__icon-box--accent"
+            ><ion-icon name="people-outline" class="services__icon"></ion-icon
           ></span>
-          <h3 class="services__title">Financial Literacy</h3>
-          <p class="services__description">
-            Covers key financial topics monthly, helping individuals build money
-            management skills and make informed decisions
+          <h3 class="services__title services__title--highlight">Mentoring</h3>
+          <p class="services__description services__description--highlight">
+            We match students with mentors in their chosen field and offer
+            monthly sessions on university prep, CV writing, and life skills.
           </p>
         </div>
 
-        <!-- Service 2 -->
+        <!-- Service 2: Career Guidance -->
         <div class="services__card">
-          <span
+          <span class="services__icon-box"
             ><ion-icon
               name="extension-puzzle-outline"
               class="services__icon"
             ></ion-icon
           ></span>
-          <h3 class="services__title">Subject choice and Career Guidelines</h3>
+          <h3 class="services__title">Career Guideline</h3>
           <p class="services__description">
-            Explores different industries on a monthly basis, featuring guest
-            speakers who share their personal journeys and insights into
-            achieving success
+            Each month we explore different industries with guest speakers who
+            share real-life insights and career advice.
           </p>
         </div>
 
-        <!-- Service 3 -->
+        <!-- Service 3: Financial Literacy  -->
         <div class="services__card">
-          <span
-            ><ion-icon name="people-outline" class="services__icon"></ion-icon
+          <span class="services__icon-box"
+            ><ion-icon name="cash-outline" class="services__icon"></ion-icon
           ></span>
-          <h3 class="services__title">Mentoring</h3>
+          <h3 class="services__title">Financial Literacy</h3>
           <p class="services__description">
-            Students are paired with dedicated mentors in their desired study or
-            career field. They also participate in monthly sessions covering a
-            wide range of topics, including university applications, CV
-            drafting, and essential life skills.
+            We teach key financial skills like budgeting, saving, and
+            decision-making to help individuals take control of their money.
           </p>
         </div>
 
-        <!-- Service 4 -->
+        <!-- Service 4: Networking -->
         <div class="services__card">
-          <span
+          <span class="services__icon-box"
             ><ion-icon name="radio-outline" class="services__icon"></ion-icon
           ></span>
           <h3 class="services__title">Networking</h3>
           <p class="services__description">
-            Individuals will be taught how to network with industry
-            professionals through LinkedIn and will receive support in securing
-            job shadowing, internships or employment opportunities.
+            Learn how to build a strong LinkedIn profile and connect with
+            professionals for job shadowing, internships, or employment.
           </p>
         </div>
       </div>
     </section>
 
     <!-- TESTIMONIALS SECTION -->
-    <!-- <section class="testimonials">
+    <section class="testimonials" id="testimonials">
       <div class="heading">
         <p class="heading__tertiary">Testimonials</p>
         <h2 class="heading__secondary">
@@ -230,7 +243,224 @@
           We have already helped
         </h2>
       </div>
-    </section> -->
+
+      <div class="container">
+        <!-- Navigation Buttons -->
+        <div class="testimonials__nav">
+          <button class="testimonials__button testimonials__button--prev">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+          <button class="testimonials__button testimonials__button--next">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+        </div>
+
+        <div class="swiper testimonials-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./img/testimonials/john-doe.jpg"
+                alt="Student testimonial photo"
+                class="testimonials__photo"
+              />
+              <h3 class="testimonials__name">John Doe</h3>
+              <span class="testimonials__age">22 years old</span>
+              <p class="testimonials__quote">
+                "The mentorship program helped me believe in myself and make
+                better academic choices."
+              </p>
+              <a href="#" class="testimonials__link"
+                >Read more
+                <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ></a>
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="./img/testimonials/jane-doe.jpg"
+                alt="Student testimonial photo"
+                class="testimonials__photo"
+              />
+              <h3 class="testimonials__name">Jane Doe</h3>
+              <span class="testimonials__age">17 years old</span>
+              <p class="testimonials__quote">
+                “I learned how to prepare a CV, apply for bursaries, and write
+                professional emails, all in one session.”
+              </p>
+              <a href="#" class="testimonials__link"
+                >Read more
+                <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ></a>
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="./img/testimonials/jene-doe.jpg"
+                alt="Student testimonial photo"
+                class="testimonials__photo"
+              />
+              <h3 class="testimonials__name">Jody Doe</h3>
+              <span class="testimonials__age">21 years old</span>
+              <p class="testimonials__quote">
+                “Thanks to the career guidance, I chose subjects that match my
+                goals.”
+              </p>
+              <a href="#" class="testimonials__link"
+                >Read more
+                <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ></a>
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="./img/testimonials/jube-doe.jpg"
+                alt="Student testimonial photo"
+                class="testimonials__photo"
+              />
+              <h3 class="testimonials__name">Jube Doe</h3>
+              <span class="testimonials__age">32 years old</span>
+              <p class="testimonials__quote">
+                "The mentorship program helped me believe in myself and make
+                better academic choices."
+              </p>
+              <a href="#" class="testimonials__link"
+                >Read more
+                <span
+                  ><ion-icon
+                    name="arrow-forward-outline"
+                    class="r-45"
+                  ></ion-icon></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta">
+      <div class="cta__container">
+        <!-- Left Content -->
+        <div class="cta__content">
+          <!-- <img src="./img/logo-2.png" alt="Walkin Progress log" class="logo" /> -->
+          <h3 class="heading__primary">
+            The Way You <br />
+            <span class="text-underline">Help Us!</span>
+          </h3>
+          <p class="cta__text">
+            Your support helps us mentor, educate, and empower young people to
+            reach their full potential. Whether through donations, partnerships,
+            or spreading the word — every action makes a difference.
+          </p>
+          <a href="#" class="btn btn--primary btn--large profile__btn cta--btn"
+            >Donate now</a
+          >
+        </div>
+        <!-- Right Content -->
+        <div class="cta__visual">
+          <img
+            src="./img/gallery/pexels-yankrukov-7793748.jpg"
+            alt="Support illustration"
+            class="cta__visual-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- footer section 1 -->
+        <div class="footer__branding">
+          <img
+            src="./img/logo-2.png"
+            alt="Walkin Progress log"
+            class="footer__logo logo"
+          />
+          <p class="footer__description">
+            All the Lorem Ipsum generators on the Internet tend to repeat
+            predefined chunks as necessary, making this the first true generator
+            on the Internet.
+          </p>
+        </div>
+        <!-- footer section 2 -->
+        <div class="footer__links">
+          <h4 class="footer__heading">Quick Links</h4>
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Section 1</a></li>
+              <li><a href="#" class="footer__link">Section 2</a></li>
+              <li><a href="#" class="footer__link">Section 3</a></li>
+              <li><a href="#" class="footer__link">Section 4</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- footer section 3 -->
+        <div class="footer__contact-info">
+          <h4 class="footer__heading">Get in Touch</h4>
+          <div class="footer__contact">
+            <div class="footer__contact-details">
+              <ion-icon name="location-outline" class="footer__icon"></ion-icon>
+              <a
+                href="https://maps.app.goo.gl/gbxJC2kcPNTeHakj7"
+                class="footer__link"
+              >
+                123 Cape Town, South Africa
+              </a>
+            </div>
+
+            <div class="footer__contact-details">
+              <ion-icon name="mail-outline" class="footer__icon"></ion-icon>
+              <a href="mailto:example@gmail.com" class="footer__link"
+                >example@gmail.com</a
+              >
+            </div>
+
+            <div class="footer__contact-details">
+              <ion-icon name="call-outline" class="footer__icon"></ion-icon>
+              <a href="tel:+27655637861" class="footer__link"
+                >+27 65 563 7861</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- footer section 4 -->
+        <form action="" class="footer__form">
+          <h4 class="footer__heading">Contact Us</h4>
+          <div class="footer__input-box">
+            <input type="text" placeholder="Name" class="footer__input" />
+            <input type="text" placeholder="Email" class="footer__input" />
+            <textarea
+              name=""
+              id="message"
+              placeholder="Message"
+              class="footer__textarea"
+            ></textarea>
+          </div>
+          <button class="footer__btn">Submit</button>
+        </form>
+      </div>
+
+      <!-- Footer Bottom Row -->
+      <div class="footer__bottom-container">
+        <p class="footer__copyright">
+          &copy; 2025 Walkin Progress. All rights reserved.
+        </p>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/" class="footer__social-link"
+            ><ion-icon name="logo-linkedin" class="footer__icon"></ion-icon
+          ></a>
+          <a href="https://www.facebook.com/" class="footer__social-link"
+            ><ion-icon name="logo-facebook" class="footer__icon"></ion-icon>
+          </a>
+          <a href="https://www.instagram.com/" class="footer__social-link"
+            ><ion-icon name="logo-instagram" class="footer__icon"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <!-- Linking IonIcon script -->
     <script

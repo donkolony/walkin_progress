@@ -25,19 +25,16 @@ Large:
 
 ----- 02 COLORS
 
-- Primary: 
-- Tints:
+- Primary: #00adef 
+- Tints: #e6f7fd #80d6f7 #66cef5
 
-
-- Shades:
-#009cd7
-#00adef
-
-
+- Shades: #009cd7
+ 
 - Accents:
 
 - Greys
 #333
+#555
 
 
 ----- 05 SHADOWS
@@ -69,6 +66,12 @@ Large:
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
+}
+
+*:focus {
+  outline: 0.2rem solid #009cd7;
+  outline-offset: 0.1rem;
 }
 
 img {
@@ -225,6 +228,12 @@ body {
   max-width: 130rem;
   margin: 0 auto;
   padding: 0 3.2rem;
+}
+
+.footer__heading {
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+  color: #555;
 }
 
 .container {
