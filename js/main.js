@@ -21,6 +21,8 @@ const aboutSwiper = new Swiper(".about-swiper", {
   },
 });
 
+console.log(aboutSwiper);
+
 // Testimonials Section
 const testimonialsSwiper = new Swiper(".testimonials-swiper", {
   loop: true,
@@ -33,7 +35,8 @@ const testimonialsSwiper = new Swiper(".testimonials-swiper", {
 
   breakpoints: {
     0: { slidesPerView: 1 }, // mobile
-    668: { slidesPerView: 2 },
+    528: { slidesPerView: 2 },
+    // 668: { slidesPerView: 2 },
     // 768: { slidesPerView: 2 }, // tablet
     1024: { slidesPerView: 3 }, // desktop
   },

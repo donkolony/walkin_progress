@@ -70,23 +70,21 @@
 }
 
 /* MOBILE */
-.header__menu-btn {
+.btn__mobile-nav {
   border: none;
   background: none;
   cursor: pointer;
-  /* hide from large screen */
   display: none;
 }
 
-.header__menu-icon {
+.btn__mobile-icon {
   height: 4.8rem;
   width: 4.8rem;
   color: #333;
 }
 
-/* hide the close icon menu, only to display in small device when menu is active */
-.header__menu-icon[name="close-outline"] {
-  /* hide close icon from large screen */
+/* Hide close icon menu from large screen*/
+.btn__mobile-icon[name="close-outline"] {
   display: none;
 }
 
@@ -275,20 +273,52 @@
   position: relative;
 }
 
-.testimonials__nav {
+/* .testimonials__nav {
   display: flex;
   justify-content: flex-end;
   position: absolute;
   gap: 10px;
   top: -5rem;
   right: 3.2rem;
+} */
+
+.testimonials .container {
+  position: relative;
+  /* border: 2px solid red; */
 }
 
 .testimonials__button {
+  display: flex;
+  align-items: center;
   font-size: 3.2rem;
-  border: 1px solid #00adef;
-  color: #00adef;
+  border-radius: 50%;
+  background-color: rgba(0, 171, 239, 0.3);
+  color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.testimonials__button:hover {
+  background-color: #00abef;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+.testimonials__button--prev,
+.testimonials__button--next {
+  position: absolute;
+  z-index: 99;
+}
+
+.testimonials__button--prev {
+  left: 1.5rem;
+  top: 28%;
+}
+
+.testimonials__button--next {
+  right: 1.5rem;
+  top: 28%;
 }
 
 .testimonials-swiper {
@@ -300,7 +330,7 @@
 .swiper-wrapper .swiper-slide {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  row-gap: 1.2rem;
 }
 
 .swiper-wrapper .swiper-slide:active {
