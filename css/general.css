@@ -14,10 +14,10 @@ Bold: 700
 
 - Line Heights
 Default: 1
-Small: 
-Medium: 
+Small: 1.4
+Medium: 1.6
 Paragraph default:
-Large:
+Large: 1.8
 
 - Letter Spacing
 -0.5px
@@ -211,7 +211,7 @@ body {
 }
 
 .heading__secondary {
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
 }
@@ -245,7 +245,7 @@ body {
 
 .grid {
   display: grid;
-  column-gap: 4.4rem;
+  column-gap: 4.8rem;
   row-gap: 9.6rem;
 }
 

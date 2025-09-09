@@ -33,7 +33,8 @@ const testimonialsSwiper = new Swiper(".testimonials-swiper", {
 
   breakpoints: {
     0: { slidesPerView: 1 }, // mobile
-    768: { slidesPerView: 2 }, // tablet
+    668: { slidesPerView: 2 },
+    // 768: { slidesPerView: 2 }, // tablet
     1024: { slidesPerView: 3 }, // desktop
   },
 });
