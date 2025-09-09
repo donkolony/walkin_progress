@@ -236,6 +236,11 @@ The breakpoint you choose should at least work between 200-300px down if you des
   .cta {
     padding: 6.4rem 2.4rem;
   }
+
+  .cta__visual-image,
+  .slider__card-image {
+    width: 80%;
+  }
 }
 
 /* Font sizes (px)
