@@ -169,7 +169,7 @@ The breakpoint you choose should at least work between 200-300px down if you des
   }
 
   .btn__mobile-icon[name="menu-outline"] {
-    display: none;
+    /* display: none; */
   }
 
   .header__nav-list {
@@ -239,7 +239,16 @@ The breakpoint you choose should at least work between 200-300px down if you des
 
   .cta__visual-image,
   .slider__card-image {
+    width: 100%;
+  }
+
+  .hero__image {
     width: 80%;
+  }
+
+  .footer__bottom-container {
+    flex-direction: column-reverse;
+    gap: 1.6rem;
   }
 }
 
