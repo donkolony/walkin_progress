@@ -282,44 +282,50 @@
   right: 3.2rem;
 } */
 
+/* .testimonials .container {
+  position: relative;
+} */
+
+/* ##########   WITH CHAT ##########  */
 .testimonials .container {
   position: relative;
-  /* border: 2px solid red; */
+}
+
+.testimonials__nav {
+  position: absolute;
+  top: -6rem;
+  right: 0;
+  padding: 0 3.2rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .testimonials__button {
   display: flex;
   align-items: center;
-  font-size: 3.2rem;
-  border-radius: 50%;
-  background-color: rgba(0, 171, 239, 0.3);
-  color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #66cef5;
+  color: #66cef5;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
+  background-color: transparent;
 }
 
 .testimonials__button:hover {
-  background-color: #00abef;
-  color: #fff;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  background-color: rgba(102, 207, 245, 0.3);
 }
 
-.testimonials__button--prev,
-.testimonials__button--next {
-  position: absolute;
-  z-index: 99;
+.testimonials__button.clicked {
+  background-color: rgba(102, 207, 245, 0.5);
+  background-color: red;
 }
 
-.testimonials__button--prev {
-  left: 1.5rem;
-  top: 26%;
+.testimonials__button ion-icon {
+  font-size: 2rem;
 }
-
-.testimonials__button--next {
-  right: 1.5rem;
-  top: 26%;
-}
+/* ##########   WITH CHAT ##########  */
 
 .testimonials-swiper {
   max-width: 130rem;

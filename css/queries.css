@@ -195,14 +195,37 @@ The breakpoint you choose should at least work between 200-300px down if you des
     width: 40%;
   }
 
-  .footer__container {
-    grid-template-columns: 1fr 1fr;
-    /* row-gap: 4.8rem; */
+  /* ##########   WITH CHAT ##########  */
+  .testimonials__nav {
+    z-index: 99;
+    top: auto;
+    bottom: -4rem;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    padding: 0;
+    margin-top: -4.8rem;
   }
+
+  .testimonials__button {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .testimonials__button ion-icon {
+    font-size: 1.5rem;
+  }
+
+  /* ##########   WITH CHAT ##########  */
 
   .heading__secondary,
   .cta__content .heading__secondary {
     margin-bottom: 4.8rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+    /* row-gap: 4.8rem; */
   }
 
   .footer__links,
