@@ -139,7 +139,6 @@ The breakpoint you choose should at least work between 200-300px down if you des
     background-color: rgba(245, 245, 245, 0.97);
     position: absolute;
     top: 0;
-    /* left: 0; */
     right: 0;
     width: 100%;
     height: 100vh;
@@ -167,9 +166,8 @@ The breakpoint you choose should at least work between 200-300px down if you des
   .nav-open .btn__mobile-icon[name="close-outline"] {
     display: block;
   }
-
-  .btn__mobile-icon[name="menu-outline"] {
-    /* display: none; */
+  .nav-open .btn__mobile-icon[name="menu-outline"] {
+    display: none;
   }
 
   .header__nav-list {
@@ -199,7 +197,7 @@ The breakpoint you choose should at least work between 200-300px down if you des
   .testimonials__nav {
     z-index: 99;
     top: auto;
-    bottom: -4rem;
+    bottom: -6rem;
     left: 50%;
     right: auto;
     transform: translateX(-50%);
@@ -280,3 +278,7 @@ The breakpoint you choose should at least work between 200-300px down if you des
 
 Spacing System (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/**************************/
+/* Fixing Safari No Flexbox Gap */
+/**************************/

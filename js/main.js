@@ -34,14 +34,13 @@ const testimonialsSwiper = new Swiper(".testimonials-swiper", {
   },
 
   breakpoints: {
-    0: { slidesPerView: 1 }, // mobile
+    0: { slidesPerView: 1 },
     528: { slidesPerView: 2 },
-    // 668: { slidesPerView: 2 },
-    // 768: { slidesPerView: 2 }, // tablet
-    1024: { slidesPerView: 3 }, // desktop
+    1024: { slidesPerView: 3 },
   },
 });
 
+////////////////////////////////////////////////////////////////////////
 // Sticky Navigation
 const sectionHeroEl = document.querySelector(".hero");
 const obs = new IntersectionObserver(
@@ -66,6 +65,7 @@ const obs = new IntersectionObserver(
 
 obs.observe(sectionHeroEl);
 
+////////////////////////////////////////////////////////////////////////
 // Disable Link Default (Temporary) - NO Function
 const navLinks = document.querySelectorAll("a:link");
 navLinks.forEach((link) => {
@@ -75,23 +75,35 @@ navLinks.forEach((link) => {
     const href = link.getAttribute("href");
 
     // Scroll back to top
-    // if (href === "#") {
-    //   window.scrollTo({
-    //     top: 0,
-    //     behavior: "smooth",
-    //   });
-    // }
+    if (href === "#") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      // console.log(href);
+    }
 
     // Scroll to other links
-    // if (href !== "#" && href.startsWith("#")) {
-    //   const sectionEl = document.querySelector(href);
-    //   sectionEl.scrollIntoView({
-    //     behavior: "smooth",
-    //   });
-    // }
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({
+        behavior: "smooth",
+      });
+      // console.log(href);
+    }
 
     // Close mobile navigation
+    if (link.classList.contains("header__nav-link")) {
+      headerEl.classList.toggle("nav-open");
+    }
   });
+});
+
+const btnNavEl = document.querySelector(".btn__mobile-nav");
+const headerEl = document.querySelector(".header");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
 });
 
 const footerBtn = document.querySelector(".footer__btn");
@@ -100,31 +112,23 @@ footerBtn.addEventListener("click", (e) => {
   e.preventDefault();
 });
 
-// Disable Link Default (Temporary) - Function Method
-// function disableLinks() {
-//   const navLinks = document.querySelectorAll("a:link");
+////////////////////////////////////////////////////////////////////////
+// Fixing Flex-box gap property missing in some Safari versions
+function checkFlexGap() {
+  var flex = document.createElement("div");
+  flex.style.display = "flex";
+  flex.style.flexDirection = "column";
+  flex.style.rowGap = "1px";
 
-//   navLinks.forEach((link) => {
-//     link.addEventListener("click", (e) => {
-//       e.preventDefault();
-//       console.log("Link click prevented!");
-//     });
-//   });
-// }
+  flex.appendChild(document.createElement("div"));
+  flex.appendChild(document.createElement("div"));
 
-// function disableButton() {
-//   const submitBtn = document.querySelector(".footer__btn");
+  document.body.appendChild(flex);
+  var isSupported = flex.scrollHeight === 1;
+  flex.parentNode.removeChild(flex);
+  console.log(isSupported);
 
-//   if (submitBtn) {
-//     submitBtn.addEventListener("click", (e) => {
-//       e.preventDefault();
-//       console.log("Button click prevented!");
-//     });
-//   }
-// }
+  if (!isSupported) document.body.classList.add("no-flexbox-gap");
+}
 
-// Need to pass the disable function as a callback function into the whole document
-// document.addEventListener("DOMContentLoaded", () => {
-//   disableLinks();
-//   disableButton();
-// });
+checkFlexGap();
