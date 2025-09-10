@@ -135,8 +135,17 @@ body {
   text-align: center;
 }
 
-.text-underline {
+/* .text-underline {
   text-decoration: underline #66cef5;
+  text-decoration-thickness: 0.6rem;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 0.4rem;
+} */
+
+span.text-underline {
+  color: #66cef5;
+  text-decoration-line: underline;
+  text-decoration-color: #66cef5;
   text-decoration-thickness: 0.6rem;
   text-decoration-skip-ink: none;
   text-underline-offset: 0.4rem;
