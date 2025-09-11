@@ -193,7 +193,6 @@ The breakpoint you choose should at least work between 200-300px down if you des
     width: 40%;
   }
 
-  /* ##########   WITH CHAT ##########  */
   .testimonials__nav {
     z-index: 99;
     top: auto;
@@ -210,11 +209,13 @@ The breakpoint you choose should at least work between 200-300px down if you des
     height: 3rem;
   }
 
+  .testimonials__button:first-child {
+    margin-right: 1.2rem;
+  }
+
   .testimonials__button ion-icon {
     font-size: 1.5rem;
   }
-
-  /* ##########   WITH CHAT ##########  */
 
   .heading__secondary,
   .cta__content .heading__secondary {

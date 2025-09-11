@@ -54,6 +54,7 @@
       <button class="btn__mobile-nav">
         <ion-icon name="menu-outline" class="btn__mobile-icon"></ion-icon>
         <ion-icon name="close-outline" class="btn__mobile-icon"></ion-icon>
+        <span class="sr-only">Toggle navigation menu</span>
       </button>
     </header>
 
@@ -106,6 +107,7 @@
               src="./img/hero-img.png"
               class="hero__image"
               alt="A female student with a surprised expression holding books"
+              fetchpriority="high"
           /></picture>
         </div>
       </div>
@@ -505,9 +507,12 @@
     <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 
     <!-- Linking SwiperJS script -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
 
     <!-- Linking Custom script -->
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
   </body>
 </html>
