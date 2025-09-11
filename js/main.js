@@ -73,60 +73,35 @@ const navLinks = document.querySelectorAll("a:link");
 // Disable Link Default (Temporary) - NO Function
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
+    e.preventDefault();
     const href = link.getAttribute("href");
 
     // Scroll back to top
-    if (href === "#") {
-      e.preventDefault();
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
-    // Scroll to internal sections
-    else if (href.startsWith("#")) {
-      e.preventDefault();
-      const sectionEl = document.querySelector(href);
-      if (sectionEl) {
-        sectionEl.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-    // Close mobile navigation
-    if (link.classList.contains("header__nav-link")) {
-      headerEl.classList.toggle("nav-open");
-    }
-  });
-});
+    // if (href === "#") {
+    //   e.preventDefault();
+    //   window.scrollTo({
+    //     top: 0,
+    //     behavior: "smooth",
+    //   });
+    // }
 
-// Disable Button Submit Default (Temporary) - NO Function
-const footerBtn = document.querySelector(".footer__btn");
-footerBtn.addEventListener("click", (e) => {
-  console.log(e);
-  e.preventDefault();
+    // Scroll to internal sections
+    // else if (href.startsWith("#")) {
+    //   e.preventDefault();
+    //   const sectionEl = document.querySelector(href);
+    //   if (sectionEl) {
+    //     sectionEl.scrollIntoView({ behavior: "smooth" });
+    //   }
+    // }
+
+    // Close mobile navigation
+    // if (link.classList.contains("header__nav-link")) {
+    //   headerEl.classList.toggle("nav-open");
+    // }
+  });
 });
 
 //  Toggle Navbar on Mobile
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
-
-////////////////////////////////////////////////////////////////////////
-// Fixing Flex-box gap property missing in some Safari versions
-// function checkFlexGap() {
-//   var flex = document.createElement("div");
-//   flex.style.display = "flex";
-//   flex.style.flexDirection = "column";
-//   flex.style.rowGap = "1px";
-
-//   flex.appendChild(document.createElement("div"));
-//   flex.appendChild(document.createElement("div"));
-
-//   document.body.appendChild(flex);
-//   var isSupported = flex.scrollHeight === 1;
-//   flex.parentNode.removeChild(flex);
-//   console.log(isSupported);
-
-//   if (!isSupported) document.body.classList.add("no-flexbox-gap");
-// }
-
-// checkFlexGap();
