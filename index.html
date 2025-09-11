@@ -99,11 +99,14 @@
             class="hero__image"
             alt="A student with a surprised expression holding books"
           /> -->
-          <img
-            src="./img/hero-img.webp"
-            class="hero__image"
-            alt="A student with a surprised expression holding books"
-          />
+          <picture
+            ><source srcset="./img/hero-img.webp" type="image/webp" />
+            <source srcset="./img/hero-img.png" type="image/png" />
+            <img
+              src="./img/hero-img.png"
+              class="hero__image"
+              alt="A female student with a surprised expression holding books"
+          /></picture>
         </div>
       </div>
     </section>
@@ -391,7 +394,7 @@
         </div>
         <!-- footer section 2 -->
         <div class="footer__links">
-          <h4 class="footer__heading">Quick Links</h4>
+          <h3 class="footer__heading">Quick Links</h3>
           <nav class="footer__nav">
             <ul class="footer__list">
               <li><a href="#" class="footer__link">Home</a></li>
@@ -406,7 +409,7 @@
 
         <!-- footer section 3 -->
         <div class="footer__contact-info">
-          <h4 class="footer__heading">Get in Touch</h4>
+          <h3 class="footer__heading">Get in Touch</h3>
           <div class="footer__contact">
             <div class="footer__contact-details">
               <ion-icon name="location-outline" class="footer__icon"></ion-icon>
@@ -436,18 +439,33 @@
 
         <!-- footer section 4 -->
         <form action="" class="footer__form">
-          <h4 class="footer__heading">Contact Us</h4>
+          <h3 class="footer__heading">Contact Us</h3>
           <div class="footer__input-box">
-            <input type="text" placeholder="Name" class="footer__input" />
-            <input type="text" placeholder="Email" class="footer__input" />
+            <input
+              type="text"
+              name="text"
+              id="text"
+              placeholder="Name"
+              class="footer__input"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+              class="footer__input"
+            />
             <textarea
-              name=""
+              type="message"
+              name="message"
               id="message"
               placeholder="Message"
+              required
               class="footer__textarea"
             ></textarea>
           </div>
-          <button class="footer__btn">Submit</button>
+          <button type="submit" class="footer__btn">Submit</button>
         </form>
       </div>
 
@@ -459,12 +477,15 @@
         <div class="footer__socials">
           <a href="https://www.linkedin.com/" class="footer__social-link"
             ><ion-icon name="logo-linkedin" class="footer__icon"></ion-icon
-          ></a>
+            ><span class="sr-only">LinkedIn</span>
+          </a>
           <a href="https://www.facebook.com/" class="footer__social-link"
             ><ion-icon name="logo-facebook" class="footer__icon"></ion-icon>
+            <span class="sr-only">Facebook</span>
           </a>
           <a href="https://www.instagram.com/" class="footer__social-link"
             ><ion-icon name="logo-instagram" class="footer__icon"></ion-icon>
+            <span class="sr-only">Instagram8</span>
           </a>
         </div>
       </div>

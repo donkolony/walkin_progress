@@ -66,32 +66,31 @@ const obs = new IntersectionObserver(
 obs.observe(sectionHeroEl);
 
 ////////////////////////////////////////////////////////////////////////
-// Disable Link Default (Temporary) - NO Function
+const btnNavEl = document.querySelector(".btn__mobile-nav");
+const headerEl = document.querySelector(".header");
 const navLinks = document.querySelectorAll("a:link");
+
+// Disable Link Default (Temporary) - NO Function
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
-    e.preventDefault();
-
     const href = link.getAttribute("href");
 
     // Scroll back to top
     if (href === "#") {
+      e.preventDefault();
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
-      // console.log(href);
     }
-
-    // Scroll to other links
-    if (href !== "#" && href.startsWith("#")) {
+    // Scroll to internal sections
+    else if (href.startsWith("#")) {
+      e.preventDefault();
       const sectionEl = document.querySelector(href);
-      sectionEl.scrollIntoView({
-        behavior: "smooth",
-      });
-      // console.log(href);
+      if (sectionEl) {
+        sectionEl.scrollIntoView({ behavior: "smooth" });
+      }
     }
-
     // Close mobile navigation
     if (link.classList.contains("header__nav-link")) {
       headerEl.classList.toggle("nav-open");
@@ -99,17 +98,16 @@ navLinks.forEach((link) => {
   });
 });
 
-const btnNavEl = document.querySelector(".btn__mobile-nav");
-const headerEl = document.querySelector(".header");
-
-btnNavEl.addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
-});
-
+// Disable Button Submit Default (Temporary) - NO Function
 const footerBtn = document.querySelector(".footer__btn");
 footerBtn.addEventListener("click", (e) => {
   console.log(e);
   e.preventDefault();
+});
+
+//  Toggle Navbar on Mobile
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
 });
 
 ////////////////////////////////////////////////////////////////////////
