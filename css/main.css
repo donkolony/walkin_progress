@@ -390,20 +390,6 @@
   padding: 6.4rem 0;
 }
 
-/* .cta__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4.8rem;
-}
-
-.cta__content {
-  flex: 1;
-  background-color: #e6f7fd;
-  border-top-right-radius: 10rem;
-  position: relative;
-} */
-
 .cta__content .heading__secondary {
   margin-bottom: 6.4rem;
 }

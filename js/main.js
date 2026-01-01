@@ -73,31 +73,35 @@ const navLinks = document.querySelectorAll("a:link");
 // Disable Link Default (Temporary) - NO Function
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
-    e.preventDefault();
     const href = link.getAttribute("href");
 
     // Scroll back to top
-    // if (href === "#") {
-    //   e.preventDefault();
-    //   window.scrollTo({
-    //     top: 0,
-    //     behavior: "smooth",
-    //   });
-    // }
+    if (href === "#") {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
 
     // Scroll to internal sections
-    // else if (href.startsWith("#")) {
-    //   e.preventDefault();
-    //   const sectionEl = document.querySelector(href);
-    //   if (sectionEl) {
-    //     sectionEl.scrollIntoView({ behavior: "smooth" });
-    //   }
-    // }
+    else if (href.startsWith("#")) {
+      e.preventDefault();
+      const sectionEl = document.querySelector(href);
+      if (sectionEl) {
+        sectionEl.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+
+    // External links (Paystack, socials, etc.)
+    else {
+      return;
+    }
 
     // Close mobile navigation
-    // if (link.classList.contains("header__nav-link")) {
-    //   headerEl.classList.toggle("nav-open");
-    // }
+    if (link.classList.contains("header__nav-link")) {
+      headerEl.classList.toggle("nav-open");
+    }
   });
 });
 
